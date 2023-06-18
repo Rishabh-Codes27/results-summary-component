@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root{
+    --font-family: 'Hanken Grotesk', sans-serif;
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+body{
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 150px;
+    background-color: grey;
+}
+
+/*CSS reset*/
+
+/*page styling*/
+.resultcard{
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+}
+
+.resultcard__part1{
+    border: 2px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(180deg,  hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: var(--White);
+    padding: 50px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.resultcard__part1 h3{
+    color: var(--Pale-blue);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.resultcard__part1-cicle{
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.info-para{
+    text-align: center;
+    color: var(--Pale-blue);
+}
+
+.resultcard__part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px black solid; */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px grey;
+    width: 50%;
+    background-color: white;
+}
+
+.resultcard__part2 h2{
+    color: var(--Cobalt-blue);
+}
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.093);
+    padding: 2px 100px;
+}
+
+
+.reaction span{
+    color: var(--Light-red);
+}
+
+.memory span{
+    color: var(--Orangey-yellow);
+}
+
+.verbal span{
+    color: var(--Green-teal);
+}
+
+.visual span{
+    color: var(--Cobalt-blue);
+}
+
+.resultcard__part2 button{
+    outline: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--Dark-gray-blue);
+    color: var(--Pale-blue);
+    font-size: 15px;
+    margin: 10px;
+}
