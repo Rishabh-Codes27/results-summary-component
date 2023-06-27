@@ -23,11 +23,13 @@ body{
     align-items: center;
     flex-direction: column;
     overflow: hidden;
-    margin-top: 150px;
+    margin-top: 10px;
     background-color: grey;
 }
 
 /*CSS reset*/
+
+
 
 /*page styling*/
 .resultcard{
@@ -61,12 +63,15 @@ body{
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
+.resultcard__part1-cicle strong{
+    font-size: 45px;
+}
 
 .info-para{
     text-align: center;
@@ -92,6 +97,7 @@ body{
 .reaction{
     background-color: hsla(0, 100%, 67%, 0.093);
     padding: 2px 100px;
+    border-radius: 10px;
 }
 
 
@@ -99,13 +105,34 @@ body{
     color: var(--Light-red);
 }
 
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.267);
+    padding: 2px 100px;
+    border-radius: 10px;
+}
+
+
 .memory span{
     color: var(--Orangey-yellow);
 }
 
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.144);
+    padding: 2px 100px;
+    border-radius: 10px;
+}
+
+
 .verbal span{
     color: var(--Green-teal);
 }
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.192);
+    padding: 2px 100px;
+    border-radius: 10px;
+}
+
 
 .visual span{
     color: var(--Cobalt-blue);
